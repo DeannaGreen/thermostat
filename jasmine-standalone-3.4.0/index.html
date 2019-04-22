@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Thermostat</title>
+  </head>
+
+  <body>
+    <section style="text-align:center">
+      <h1>Current temperature at <span id="current-location"> </span> : <span id="current-temperature">20</span> °C</h1><br>
+      <form id="select-city">
+        <input id="current-city" type="text" placeholder="Enter a city"></input><br><br>
+        <input class="btn btn-dark" type="submit"></input>
+      </form><br><br>
+    </section>
+
+    <section style="text-align:center">
+      <h1 id="degree" class="medium-usage"> <span id="temperature" class="medium-usage"></span> °C</h1>
+      <p>
+       <button class="btn btn-dark" id="temperature-up">+</button>
+       <button style="font-weight: bold;" class="btn btn-dark" id="temperature-down">-</button>
+       <button class="btn btn-dark" id="temperature-reset">reset</button><br><br>
+       <p style="font-weight: bold;">POWER SAVING MODE: <span id="power-saving-status">ON</span></p>
+       <button class="btn btn-success" id="powersaving-on">ON</button>
+       <button class="btn btn-dark" id="powersaving-off">OFF</button>
+     </p>
+     <p>Max Temperature: <span id="max-temp">25</span> °C</p>
+    </section>
+    <script src="src/jquery.min.js"></script>
+    <script src="src/thermostat.js"></script>
+    <script src="src/interface.js"></script>
+  </body>
+</html>
